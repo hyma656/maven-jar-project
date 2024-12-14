@@ -11,4 +11,8 @@ COPY  /root/bamboo-agent-home/xml-data/build-dir/TRY-PLAN2-JOB1/target/maven-jar
 EXPOSE 8080
 
 # Run the JAR file
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+
+# Keep the container running to check logs if the app fails to start
+CMD ["tail", "-f", "/dev/null"]
+
