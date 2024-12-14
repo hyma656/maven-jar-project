@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the JAR file from the target folder
-COPY target/maven-jar-sample-1.0-SNAPSHOT-jar-with-dependencies.jar /app/app.jar
+COPY  /root/bamboo-agent-home/xml-data/build-dir/TRY-PLAN2-JOB1/target/maven-jar-sample-1.0-SNAPSHOT-jar-with-dependencies.jar /app/app.jar
 
 # Expose the port that the app will run on
 EXPOSE 8080
