@@ -11,4 +11,4 @@ COPY **/maven-jar-sample-1.0-SNAPSHOT-jar-with-dependencies.jar /app
 EXPOSE 8080
 
 # Run the JAR file
-ENTRYPOINT ["java", "-jar", "/app/my-app.jar"]
+ENTRYPOINT ["java", "-jar", "/app"]
